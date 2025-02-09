@@ -4,6 +4,7 @@
 }
 
 body{
+  height: 100vh;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -12,16 +13,36 @@ body{
 
 .container{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height:fit-content;
   width: auto;
+  gap: 5px;
+  border: 10px solid white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#display{
+  background-color: aqua;
+  height: 80px;
+  width: 100%;
 }
 
 #layout{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 button{
   font-size: 50px;
   font-weight: bold;
+  padding: 20px 20px;
+  flex: 1;
+  width: 80px;
 }
 
