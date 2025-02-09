@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: black ;
+}
+
+.container{
+  display: flex;
+  height:fit-content;
+  width: auto;
+}
+
+#layout{
+  display: flex;
+}
+
+button{
+  font-size: 50px;
+  font-weight: bold;
+}
+
