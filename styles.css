@@ -24,13 +24,18 @@ body{
   padding: 20px;
 }
 
-#display{
-  background-color: aqua;
+.display{
+  background-color: hsl(180, 41%, 82%);
   height: 80px;
   width: 100%;
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: right;
+  
 }
 
-#layout{
+.layout{
   display: flex;
   flex-direction: column;
   justify-content: center;
