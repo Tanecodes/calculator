@@ -12,3 +12,7 @@ numbers.forEach(function(button) {
 clear.addEventListener("click",function(){
   display.textContent = "";
 });
+
+equals.addEventListener("click",function(){
+  
+});
