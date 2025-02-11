@@ -1,18 +1,28 @@
 const numbers = document.querySelectorAll(".num");
-const equals = document.querySelector(".equals");
-const clear = document.querySelector(".clear");
 const display = document.querySelector(".display");
+
+let previnput = "";
+let currentinput = "";
+
   
 numbers.forEach(function(button) {
   button.addEventListener("click", function() {
     display.textContent += button.textContent;
   }); 
 });
-
-clear.addEventListener("click",function(){
+document.querySelector(".clear").addEventListener("click",function(){
   display.textContent = "";
 });
-
-equals.addEventListener("click",function(){
-  
+document.querySelector(".add").addEventListener("click",function(){
+  let add = document.querySelector(".add").textContent;
+  display.textContent = display.textContent + add;
 });
+document.querySelector(".minus").addEventListener("click",function(){
+  let minus = document.querySelector(".minus").textContent;
+  display.textContent = display.textContent + minus;
+});
+document.querySelector(".times").addEventListener("click",function(){
+  let times = document.querySelector(".times").textContent;
+  display.textContent = display.textContent + times;
+})
+ 
