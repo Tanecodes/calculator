@@ -3,7 +3,8 @@ const display = document.querySelector(".display");
 
 let previnput = "";
 let currentinput = "";
-
+let operator = "";
+let result = "";
   
 numbers.forEach(function(button) {
   button.addEventListener("click", function() {
@@ -25,4 +26,8 @@ document.querySelector(".times").addEventListener("click",function(){
   let times = document.querySelector(".times").textContent;
   display.textContent = display.textContent + times;
 })
+document.querySelector("equals").addEventListener("click",function(){
+  let expression = display.textContent;
+  
+});
  
